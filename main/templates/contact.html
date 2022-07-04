@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact-us{% endblock title %}
+{% block main %}
+
+<aside id="cse-hero">
+	<div class="flexslider">
+		<ul class="slides">
+		   <li style="background-image: url({% static 'images/cs.jpg' %});">
+			   <div class="overlay-gradient"></div>
+			   <div class="container">
+				   <div class="row">
+					   <div class="col-md-8 col-md-offset-2 text-center slider-text">
+						   <div class="slider-text-inner">
+							   <h1 class="heading-section">Contact us</h1>
+								
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+		   </li>
+		  </ul>
+	  </div>
+</aside>
+
+<div id="cse-contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-md-push-1 animate-box">
+				
+				<div class="cse-contact-info">
+					<h3>Contact Information</h3>
+					<ul>
+						<li class="address">Main road,बिराटनगर 56613</li>
+						<li class="phone"><a href="tel://1234567920">+977-9862079340</a></li>
+						<li class="email"><a href="mailto:navrash007@gmail.com">navrash007@gmail.com</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="col-md-6 animate-box">
+				<h3>Get In Touch</h3>
+				<form action="/contactus" method="post">
+					{% csrf_token %}
+					<div class="row form-group">
+						<div class="col-md-6">
+							<!-- <label for="fname">First Name</label> -->
+							<input type="text" id="fname" name = 'fname' class="form-control" placeholder="Your firstname">
+						</div>
+						<div class="col-md-6">
+							<!-- <label for="lname">Last Name</label> -->
+							<input type="text" id="lname" class="form-control" name="lname" placeholder="Your lastname">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-md-12">
+							<!-- <label for="email">Email</label> -->
+							<input type="text" id="email" class="form-control" name="email" placeholder="Your email address">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-md-12">
+							<!-- <label for="subject">Subject</label> -->
+							<input type="text" id="subject" class="form-control" name="subject" placeholder="Your subject of this message">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-md-12">
+							<!-- <label for="message">Message</label> -->
+							<textarea name="message" id="message" cols="30" rows="10" name="message" class="form-control" placeholder="Say something about us"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Send Message" class="btn btn-primary">
+					</div>
+
+				</form>		
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596448.002887672!2d84.12978810678658!3d28.32387270205929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef75500e19a329%3A0xc5372506a860ea7!2sCSE%20(College%20of%20Software%20Engineering)%20IT%20College!5e0!3m2!1sne!2snp!4v1654533096796!5m2!1sne!2snp" width="1500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<section id="fotter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<!-- <img src="images/logo.jpg"> -->
+				<br>
+				<h4 class="text-center">About</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div class="row">
+					<div class="col-md-9">
+						<i class="fa-solid fa-phone "><span class="fotter-icon">+977-9862079340</span></i>
+					<hr>
+					
+						<i class="fa-solid fa-envelope"><span class="fotter-icon"> navrash007@gmail.com</span></i>
+					<hr>
+						<i class="fa-solid fa-location-pin"><span class="fotter-icon"> Main road,बिराटनगर 56613 </span></i>
+						<hr>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<br>
+				<h4 class="text-center">Ouick Link</h4>
+				<ul class="quick_link">
+					<a href="index.html"><li class="quick">Home </li></a>
+					<a href="courses.html"><li class="quick">Course </li></a>
+					<a href="about.html"><li class="quick">About </li></a>
+					<a href="form.html"><li class="quick">Admission form </li></a>
+
+
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+			<br>
+					<h4 class="text-center img">Subscribe Newsletter</h4>
+					<p class="p">Subscribe NewsletterDon't miss to subscribe to our news feed, Get the latest updates from us!</p>
+							
+					</div>
+<div class="row">
+<div class="col-md-3 myy">
+	<div class="control has-icons-left has-icons-right">
+<input class="input is-large" type="email" placeholder="Email">
+<span class="icon is-left">
+<i class="fas fa-envelope"></i>
+</span>
+
+</span>
+</div>
+</div>
+
+	<p>  <button class="button is-success is-light " style="background-color: red; height: 36px; size: 10px; color: #ffff; font-size: 16px; ">Subscribe </button></p>
+
+</div>
+	</div>
+			</div>
+		</div>
+		<hr class="hr">
+		<div class="icons">
+			
+			<i class="icon-facebook2 hello"></i>
+<i class="icon-twitter2 hello"></i>
+<i class="icon-instagram hello"></i>
+		</div>
+	<p class="cpy">Copyright &copy; All right are reserves</p>
+
+	</div>
+</section>{% endblock main %}

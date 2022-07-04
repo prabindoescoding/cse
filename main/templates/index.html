@@ -1,0 +1,341 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Colledge of Software Engineering{% endblock title %}
+{% block main %}
+<aside id="cse-hero">
+	<div class="flexslider">
+		<ul class="slides">
+		   <li style="background-image: url({% static 'images/bg1.jpg' %} );">
+			   <div class="overlay-gradient"></div>
+			   <div class="container">
+				   <div class="row">
+					   <div class="col-md-8 col-md-offset-2 text-center slider-text">
+						   <div class="slider-text-inner">
+							   
+								
+								<p><a class="btn btn-primary btn-lg" href="form.html">Start Learning Now!</a></p>
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+		   </li>
+		   <li style="background-image:{% static "images/bg2.jpg" %};">
+			   <div class="overlay-gradient"></div>
+			   <div class="container">
+				   <div class="row">
+					   <div class="col-md-8 col-md-offset-2 text-center slider-text">
+						   <div class="slider-text-inner">
+							   
+								
+								<p><a class="btn btn-primary btn-lg btn-learn" href="form.html">Start Learning Now!</a></p>
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+		   </li>
+		   <li style="background-image: url({% static 'images/bg3.jpg' %});">
+			   <div class="overlay-gradient"></div>
+			   <div class="container">
+				   <div class="row">
+					   <div class="col-md-8 col-md-offset-2 text-center slider-text">
+						   <div class="slider-text-inner">
+							   <!-- <h1>We Help You to Learn New Things</h1> -->
+								
+								<p><a class="btn btn-primary btn-lg btn-learn" href="form.html">Start Learning Now!</a></p>
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+		   </li>		   	
+		  </ul>
+	  </div>
+</aside>
+
+<div id="cse-course-categories">
+	<div class="container">
+		<div class="row animate-box">
+			<div class="col-md-6 col-md-offset-3 text-center cse-heading">
+				<h2>Course categories</h2>
+				<!-- <p>lorem </p> -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+					
+						<i class="fa-solid fa-globe"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="#">Web Development</a></h3>
+						<p>lorem </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="fa-solid fa-network-wired"></i> 
+					</span>
+					<div class="desc">
+						<h3><a href="#">Networking </a></h3>
+						<p>lorem </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="fa-solid fa-tally"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="#">Tally</a></h3>
+						<p>lorem </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="fa-solid fa-desktop"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="#">Basic Computer Course</a></h3>
+						<p>lorem </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="icon-photo"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="#">Graphic Design</a></h3>
+						<p>lorem </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="fa-solid fa-code"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="#">Programming Language</a></h3>
+						<p>lorem </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="fa-solid fa-people-group"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="#">Tuition class 1/Bachelor</a></h3>
+						<p>lorem </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="fa-solid fa-user-graduate"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="#">Prepration class</a></h3>
+						<p>lorem </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<section id="cse-about">
+ <div class="container">
+	 <div class="row">
+		 <div class="col-md-6 animate-box">
+			 <h2>Why to CSE</h2>
+			 <p class="cse-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 tempor incididunt ut labore et dolore magna aliqua.</p>
+		 </div>
+		 <div class="col-md-6 animate-box">
+			 <img src={% static "images/bg1.jpg" %}>
+		 </div>
+
+	 </div>
+ </div>
+</section>	
+<div id="cse-course">
+	<div class="container">
+		<div class="row animate-box">
+			<div class="col-md-6 col-md-offset-3 text-center cse-heading">
+				<h2>Our Course</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis libero beatae at dignissimos. Quos, deserunt!</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 animate-box">
+				<div class="course">
+					<a href="#" class="course-img" style="background-image: url({% static 'images/c2.jpeg' %});">
+					</a>
+					<div class="desc">
+						<h3><a href="#">Web Development</a></h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<span><a href="form.html" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 animate-box">
+				<div class="course">
+					<a href="#" class="course-img" style="background-image: url({% static 'images/c1.jpg' %});">
+					</a>
+					<div class="desc">
+						<h3><a href="#">Tally </a></h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<span><a href="form.html" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 animate-box">
+				<div class="course">
+					<a href="#" class="course-img" style="background-image: url({% static 'images/c3.jpg' %});">
+					</a>
+					<div class="desc">
+						<h3><a href="#">Prepration Class</a></h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<span><a href="form.html" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 animate-box">
+				<div class="course">
+					<a href="#" class="course-img" style="background-image: url({% static 'images/c4.jpg' %});">
+					</a>
+					<div class="desc">
+						<h3><a href="#">Network Engineering</a></h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<span><a href="form.html" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p><a class="btn btn-primary btn-lg text-center" href="courses.html">Explore Course</a></p>
+
+	</div>
+	
+</div>
+
+
+<div id="cse-testimonial" style="background-image: url({% static 'images/school.jpg' %});">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row animate-box">
+			<div class="col-md-6 col-md-offset-3 text-center cse-heading">
+				<h2><span>Testimonials</span></h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row animate-box">
+					<div class="owl-carousel owl-carousel-fullwidth">
+						<div class="item">
+							<div class="testimony-slide active text-center">
+								<div class="user" style="background-image: url({% static 'images/sir.jpg' %});"></div>
+								<span>Navraj Adhakari<br><small>CEO</small></span>
+								<blockquote>
+									<p>&ldquo;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, similique.&rdquo;</p>
+								</blockquote>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-slide active text-center">
+								<div class="user" style="background-image: url({% static 'images/person2.jpg' %});"></div>
+								<span>Bipin Pyakurel<br><small>Director</small></span>
+								<blockquote>
+									<p>&ldquo;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, similique.&rdquo;</p>
+								</blockquote>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-slide active text-center">
+								<div class="user" style="background-image: url({% static 'images/person2.jpg' %});"></div>
+								<span>Monu<br><small>Students</small></span>
+								<blockquote>
+									<p>&ldquo;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, similique.&rdquo;</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="cse-blog">
+	<div class="container">
+		<div class="row animate-box">
+			<div class="col-md-8 col-md-offset-2 text-center cse-heading">
+				<h2>Events</h2>
+
+
+				
+			</div>
+		</div>
+		<div class="row row-padded-mb">
+			<div class="col-md-4 animate-box">
+				<div class="cse-event">
+					<div class="date text-center"><span>10<br>May.</span></div>
+					<h3><a href="#"></a></h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<p><a href="#">Read More</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 animate-box">
+				<div class="cse-event">
+					<div class="date text-center"><span>18<br>May.</span></div>
+					<h3><a href="#">Cse, Nepal</a></h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<p><a href="#">Read More</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 animate-box">
+				<div class="cse-event">
+					<div class="date text-center"><span>18<br>May.</span></div>
+					<h3><a href="#">Cse, Nepal</a></h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<p><a href="#">Read More</a></p>
+				</div>
+			</div>
+
+
+<div id="cse-gallery" class="cse-bg-section">
+	<div class="row text-center">
+		<h2><span>Sponser</span></h2>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-padded">
+			<a href="images/bg2.jpg" class="gallery" style="background-image: url({% static 'images/bg2.jpg' %});"></a>
+			
+		</div>
+		<div class="col-md-3 col-padded">
+			<a href="images/bg3.jpeg" class="gallery" style="background-image: url({% static 'images/bg3.jpeg' %});"></a>
+		</div>
+		<div class="col-md-3 col-padded">
+			<a href="#" class="gallery" style="background-image: url({% static 'images/sp.jpg' %});"></a>
+		</div>
+		<div class="col-md-3 col-padded">
+		</div>
+	</div>
+</div>
+<div class="gototop js-top">
+	<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+<br>
+</div>
+</div>
+{% endblock main %}

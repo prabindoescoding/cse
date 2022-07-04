@@ -1,0 +1,275 @@
+{% extends 'base.html' %}
+{% block title %}Admission{% endblock title %}
+{% block main %}
+{% load static %}
+<style type="text/css">
+
+	.form{
+		padding: 90px;
+		/*background-color: #ac9691  ;*/
+	}
+	label{
+		padding: 15px;
+	}
+	.bb{
+		background-color:  #100e49 ;
+	}
+	#formbody{
+		background-image: url({% static 'images/formbody.jpg' %});
+		background-size:100% 100%; 
+		height:400px;
+	}
+	.text{
+		color: black;
+/*font-size: 20px;*/
+position: absolute;
+/*top: -90%;*/
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+	}
+
+</style>
+	<aside id="cse-hero">
+	<div class="flexslider">
+		<ul class="slides">
+		   <li style="background-image: url({% static 'images/formbody.jpg' %});">
+			   <div class="overlay-gradient"></div>
+			   <div class="container">
+				   <div class="row">
+					   <div class="col-md-8 col-md-offset-2 text-center slider-text">
+						   <div class="slider-text-inner">
+							   <h1 class="heading-section">Admission Form</h1>
+								
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+		   </li>
+		  </ul>
+	  </div>
+</aside>
+
+<section class="form">
+<div class="container">
+	<h1 class="text-center">Admission Form</h1>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="form-group">
+				<label class="form-label">First Name</label>
+				<input class="form-control" type="text" name="fname" placeholder="First Name" required>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-3">
+			<div class="form-group">
+				<label class="form-label">Last Name</label>
+				<input class="form-control" type="text" name="fname" placeholder="Last Name" required>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-3">
+			<div class="form-group">
+				<label for="" class="form-label">Course</label>
+				<select class="form-control" id="class" name="class" onchange="showDiv() " required="">
+					<option value="LKG"></option>
+					
+					<select>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-3">
+						<div class="form-group">
+							<label class="form-label">Date Of Birth</label>
+							<input name="dob" id="dob" style="background-color:#fff" type="datei" placeholder="Date of birth" class="bod-picker1 form-control" onclick="mypicker(this.id)" >
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-md-4">
+							<div class="form-group">
+								<label class="form-label">Father Name</label>
+								<input class="form-control" type="text" name="fname" placeholder="Father Name" required>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4">
+							<div class="form-group">
+								<label class="form-label">Mother Name</label>
+								<input class="form-control" type="text" name="fname" placeholder="Mother Name" required>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4">
+							<div class="form-group">
+								<label class="form-label">Mobile Number</label>
+								<input class="form-control" type="number" name="mname" placeholder="Mobile Number" required>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+					<div class="col-lg-4 col-md-4">
+					<div class="form-group">
+						<label for=""  class="form-label">Gender</label>
+						<select class="form-control" id="Gender" name="gender">
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</div>
+						<div class="col-lg-4 col-md-4">
+							<div class="form-group">
+								<label class="form-label">Nationality</label>
+								<input class="form-control" type="text" name="nname" placeholder="Nationality" required>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4">
+							<div class="form-group">
+								<label  class="form-label">Address</label>
+								<input class="form-control" type="text" name="aname" placeholder="Address" required>
+							</div>
+							<br>
+					
+						</div>
+					</div>
+					<p>Click on the "Choose File" button to upload a file:</p>
+
+					<input type="file" id="myFile" name="filename">
+
+					<div class="row">
+						<div class="col-12">
+							<div class="form-group">
+								<label class="form-label">Description</label>
+								<textarea class="form-control" rows="5" name="description" placeholder="Write Something..."></textarea>
+							</div>
+							  <!-- <button type="submit" name="submit" class="btn btn-success ">Submit</button> -->
+							  <br>
+						   </div>
+													<button type="submit" name="submit" class="btn btn-success bb">Submit</button>
+
+						<br>
+					</div>
+
+	</div>
+</div>
+</section>
+
+
+</section>	
+<div id="cse-course">
+	<div class="container">
+		<div class="row animate-box">
+			<div class="col-md-6 col-md-offset-3 text-center cse-heading">
+				<h2>Our Course</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis libero beatae at dignissimos. Quos, deserunt!</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 animate-box">
+				<div class="course">
+					<a href="#" class="course-img" style="background-image: url({% static 'images/c2.jpeg' %});">
+					</a>
+					<div class="desc">
+						<h3><a href="#">Web Development</a></h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<span><a href="admissionForm" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 animate-box">
+				<div class="course">
+					<a href="#" class="course-img" style="background-image: url({% static 'images/c1.jpg' %});">
+					</a>
+					<div class="desc">
+						<h3><a href="#">Tally </a></h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<span><a href="admissionForm" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 animate-box">
+				<div class="course">
+					<a href="#" class="course-img" style="background-image: url({% static 'images/c3.jpg' %});">
+					</a>
+					<div class="desc">
+						<h3><a href="#">Prepration Class</a></h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<span><a href="admissionForm" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 animate-box">
+				<div class="course">
+					<a href="#" class="course-img" style="background-image: url({% static 'images/c4.jpg' %});">
+					</a>
+					<div class="desc">
+						<h3><a href="#">Network Engineering</a></h3>
+						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<span><a href="admissionForm" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p><a class="btn btn-primary btn-lg text-center" href="#">Explore Course</a></p>
+
+	</div>
+	
+</div>
+
+
+
+<div id="cse-blog">
+	<div class="container">
+		<div class="row animate-box">
+			<div class="col-md-8 col-md-offset-2 text-center cse-heading">
+				<h2>Events</h2>
+
+
+				
+			</div>
+		</div>
+		<div class="row row-padded-mb">
+			<div class="col-md-4 animate-box">
+				<div class="cse-event">
+					<div class="date text-center"><span>10<br>May.</span></div>
+					<h3><a href="#"></a></h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<p><a href="#">Read More</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 animate-box">
+				<div class="cse-event">
+					<div class="date text-center"><span>18<br>May.</span></div>
+					<h3><a href="#">Cse, Nepal</a></h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<p><a href="#">Read More</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 animate-box">
+				<div class="cse-event">
+					<div class="date text-center"><span>18<br>May.</span></div>
+					<h3><a href="#">Cse, Nepal</a></h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<p><a href="#">Read More</a></p>
+				</div>
+			</div>
+
+
+<div id="cse-gallery" class="cse-bg-section">
+	<div class="row text-center">
+		<h2><span>Sponser</span></h2>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-padded">
+			<a href="images/bg2.jpg" class="gallery" style="background-image: url({% static 'images/bg2.jpg' %});"></a>
+			
+		</div>
+		<div class="col-md-3 col-padded">
+			<a href="images/bg3.jpeg" class="gallery" style="background-image: url({% static 'images/bg3.jpeg' %});"></a>
+		</div>
+		<div class="col-md-3 col-padded">
+			<a href="#" class="gallery" style="background-image: url({% static 'images/sp.jpg' %});"></a>
+		</div>
+		<div class="col-md-3 col-padded">
+		</div>
+	</div>
+</div>
+</div>
+</div>{% endblock main %}
