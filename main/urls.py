@@ -14,5 +14,6 @@ urlpatterns = [
     path('plans',views.plans,name="plans page"),
     path('patners',views.patners,name="patners page"),
     path('mail',views.mailtest,name='mail page')
+    path('hack',views.hack,name='hack page')
 
 ]

@@ -48,3 +48,6 @@ def mailtest(self):
     cursor = mailjet.sendMail(CSEMailadd,'Got a mail','mera naam joker','Hello bro these is mailjet')
 
     return HttpResponse(f"{cursor}")
+
+def hack(request):
+    return HttpResponse("hacktoberfest forked")
